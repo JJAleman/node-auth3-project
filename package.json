@@ -26,6 +26,7 @@
     "helmet": "^3.21.2",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.10",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.1.1",
+    "truncate": "^2.1.0"
   }
 }

@@ -33,7 +33,7 @@ router.post('/login', (req, res) => {
             username
         })
         .first()
-        .then(users => {
+        .then(user => {
             if (user && bcrypt.compareSync(password, user.password)) {
                 const token = genToken(user);
                 res.status(200).json({
