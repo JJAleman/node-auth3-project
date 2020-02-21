@@ -52,7 +52,7 @@ function genToken(user) {
     const payload = {
         userid: user.id,
         username: user.username,
-        roles: ['Student']
+        roles: ['Admin']
     };
     const options = {
         expiresIn: '1h'
