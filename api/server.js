@@ -22,19 +22,19 @@ server.get("/", (req, res) => {
   res.status(200).json({ message: "It's working!!"});
 });
 
-server.get('/token', (req, res) => {
-    const payload = {
-        subject: 'thatuser',
-        userid: 'jjaleman',
-    };
-    const secret = 'I think this is a secret';
-    const options = {
-        expiresIn: '1h'
-    };
+// server.get('/token', (req, res) => {
+//     const payload = {
+//         subject: 'thatuser',
+//         userid: 'jjaleman',
+//     };
+//     const secret = 'I think this is a secret';
+//     const options = {
+//         expiresIn: '1h'
+//     };
 
-    const token = jwt.sign(payload, secret, options);
+//     const token = jwt.sign(payload, secret, options);
 
-    res.json(token);
-})
+//     res.json(token);
+// })
 
 module.exports = server;
